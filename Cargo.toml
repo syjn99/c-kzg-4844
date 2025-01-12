@@ -24,6 +24,7 @@ default = ["std", "portable", "ethereum_kzg_settings"]
 std = ["hex/std", "libc/std", "serde?/std", "once_cell?/std"]
 serde = ["dep:serde"]
 generate-bindings = ["dep:bindgen"]
+ethereum_kzg_settings = ["dep:once_cell"]
 # preload kzgsetting bytes instead of init from file, difference is mem management
 preload-kzg-settings = []
 
